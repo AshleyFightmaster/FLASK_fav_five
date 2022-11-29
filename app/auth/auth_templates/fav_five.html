@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<strong>Five Favorite Movies</strong>
+    {% for movie in movies %}
+        <h1>{{movie.name}}</h1>
+        <p>{{movie.year}}</p>
+        <p>{{movie.genre}}</p>
+     {% endfor %} 
+     <a href = "/">Go Back</a>
+{% endblock %}    
